@@ -1,0 +1,15 @@
+﻿<div (click)="toggleLangBarState()" [ngClass]="{'main-wrp-ltr':isEng,'main-wrp-rtl':isHeb}" [@isLangBarOpenRTL]="isHeb?isLangBarOpen:-1" [@isLangBarOpenLTR]="isEng?isLangBarOpen:-1" class="main-wrp pointer">
+
+    <div id="" [ngClass]="{'main-wrp--lang-wrp-ltr':isEng,'main-wrp--lang-wrp-rtl':isHeb}" class="main-wrp--lang-wrp">
+        <select class="select" (change)="onChange($event.target.value)" (click)="$event.stopPropagation()">
+            <option class="select--option" [value]="'choose'">{{'language'|translate}}</option>
+            <option class="select--option" [value]="'eng'">eng</option>
+            <option class="select--option" [value]="'heb'">עבר</option>
+        </select>
+
+    </div>
+    <div [ngClass]="{'main-wrp--toggle-wrp-ltr':isEng,'main-wrp--toggle-wrp-rtl':isHeb}" class="main-wrp--toggle-wrp">
+    </div>
+
+
+</div>

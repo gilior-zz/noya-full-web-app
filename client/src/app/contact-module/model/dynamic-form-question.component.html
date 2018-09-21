@@ -1,0 +1,29 @@
+<div [formGroup]="form">
+  <div class="form-group">
+    <label [attr.for]="question.key">{{question.label|translate}}<span class="asterisk"
+                                                                       *ngIf="question.required">*</span> </label>
+
+    <div [ngSwitch]="question.controlType">
+
+      <input [disabled]="disabled" *ngSwitchCase="'textbox'" class="form-control input-lg"
+             [formControlName]="question.key"
+             [id]="question.key" [type]="question.type" [email]="question.key==='email'">
+
+      <textarea [disabled]="disabled" *ngSwitchCase="'textarea'" [formControlName]="question.key"
+                class="form-control input-lg" rows="8"
+                class="form-control input-lg"
+      ></textarea>
+
+      <select [disabled]="disabled" *ngSwitchCase="'dropdown'" [id]="question.key" [formControlName]="question.key">
+        <option *ngFor="let opt of question.options" [value]="opt.key">{{opt.value}}</option>
+      </select>
+
+    </div>
+    <div *ngIf="isInvalid">
+        <span *ngFor="let err of errors" class="label-warning">
+             {{question.errMsgs[err]|translate}}
+          </span>
+    </div>
+  </div>
+</div>
+

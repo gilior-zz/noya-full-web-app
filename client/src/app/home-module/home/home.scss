@@ -1,0 +1,12 @@
+﻿
+.home-page-text {
+    font-size: larger;
+    padding: 15px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+    //background: #f0f9ff;
+  //background: radial-gradient(ellipse at center, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+  background: white;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border-radius: 3em 1em;
+   font-family:'GYADBR';
+}

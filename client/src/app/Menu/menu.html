@@ -1,0 +1,81 @@
+﻿<div [dir]="dir" class="navbar navbar-default my-navbar">
+
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" (click)="changeCollpse()" [class.collapsed]="!isCollapsed"
+    >
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>
+    </button>
+    <h4 class="navMenu hidden-lg hidden-md hidden-sm mobliePath">
+      <span class="white-font">{{'Noya Schleien'|translate}}</span>
+      <span class="white-font">|</span>
+      <span class="pageName white-font">{{pageName|translate}}</span>
+
+    </h4>
+
+  </div>
+  <div class="navbar-collapse collapse" [class.in]="isCollapsed">
+
+    <ul class="menu-ul nav nav-pills nav-justified" [class.collapsed]="isCollapsed">
+      <li>
+        <a (click)="changeCollpse()"
+           routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm"
+           [routerLink]="['home']">{{'Home'|translate}}</a>
+        <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs"
+           (click)="isCollapsed=!isCollapsed" [routerLink]="['home']">{{'Home'|translate}}</a>
+      </li>
+      <li>
+        <a
+          (click)="changeCollpse()" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm"
+          [routerLink]="['biography']">{{'Biography'|translate}}</a>
+        <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs"
+           (click)="isCollapsed=!isCollapsed" [routerLink]="['biography']">{{'Biography'|translate}}</a>
+
+      </li>
+      <li>
+        <a (click)="changeCollpse()" routerLinkActive="active-menu-item"
+           class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['pictures']">{{'Pictures'|translate}}</a>
+        <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['pictures']">{{'Pictures'|translate}}</a>
+
+      </li>
+      <li>
+        <a (click)="changeCollpse()"
+           routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm"
+           [routerLink]="['videos']">{{'Videos'|translate}}</a>
+        <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs"
+           (click)="isCollapsed=!isCollapsed" [routerLink]="['videos']">{{'Videos'|translate}}</a>
+
+      </li>
+      <li>
+        <a routerLinkActive="active-menu-item"
+           (click)="changeCollpse()" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm"
+           [routerLink]="['programs']">{{'programs'|translate}}</a>
+        <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs"
+           (click)="isCollapsed=!isCollapsed" [routerLink]="['programs']">{{'programs'|translate}}</a>
+
+      </li>
+      <li>
+        <a routerLinkActive="active-menu-item"
+           (click)="changeCollpse()" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm"
+           [routerLink]="['links']">{{'links'|translate}}</a>
+        <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs"
+           (click)="isCollapsed=!isCollapsed" [routerLink]="['links']">{{'links'|translate}}</a>
+
+      </li>
+      <li>
+        <a routerLinkActive="active-menu-item"
+           (click)="changeCollpse()" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm"
+           [routerLink]="['contact']">{{'order concert'|translate}}</a>
+        <a routerLinkActive="active-menu-item" class="menu-font   menu-anchor hidden-xs"
+           (click)="isCollapsed=!isCollapsed" [routerLink]="['contact']">{{'order concert'|translate}}</a>
+
+      </li>
+
+
+    </ul>
+  </div>
+
+</div>
+

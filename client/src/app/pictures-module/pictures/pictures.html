@@ -1,0 +1,44 @@
+﻿<div class="row">
+  <div #foo *ngFor="let img of imgs$|async"
+       class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center visible-md visible-sm visible-lg visible-xs">
+    <ny-picture (imageSedlected)="onImageSedlected($event)" [img]="img"></ny-picture>
+  </div>
+  <!--<div #doAction *ngFor="let img of images" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center visible-xs">-->
+  <!--<img (click)="selectedID=img.ID" class="img-responsive img-rounded img-hover-animation" [src]="img.ImageURL" alt="" />-->
+
+  <!--</div>-->
+
+</div>
+
+<!-- Modal -->
+<div #myModal class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="carousel-example-generic" class="carousel slide" data-interval="false"
+             data-ride="carousel">
+
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div *ngFor="let img of imgs$|async;let first=first" [ngClass]="setClasses(img.ID)">
+              <ny-picture-carousel [img]="img"></ny-picture-carousel>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="false"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

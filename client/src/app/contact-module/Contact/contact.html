@@ -1,0 +1,20 @@
+﻿<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+
+    <div *ngFor="let question of questions" class="form-row">
+      <ny-question [disabled]="isSubmitting" [question]="question" [form]="form"></ny-question>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12" [ngClass]="{'text-right':isEng,'text-left':isHeb}">
+        <button type="submit" class="btn btn-info" [disabled]="isSubmitting||!form.valid">
+          {{'Submit'|translate}}
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <div *ngIf="payLoad" class="form-row">
+    <strong>Saved the following values</strong><br>{{payLoad}}
+  </div>
+</div>

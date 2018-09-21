@@ -1,0 +1,57 @@
+﻿<div [dir]="dir">
+  <div class="container-fluid">
+    <header-image>
+    </header-image>
+    <!--<div class="down-arrow hidden-xs">-->
+    <!--<div (click)="goToContent()" class="down-arrow&#45;&#45;inner down-arrow&#45;&#45;top pointer"></div>-->
+
+    <!--<div (click)="goToContent()" class="down-arrow&#45;&#45;inner down-arrow&#45;&#45;bottom pointer"></div>-->
+    <!--</div>-->
+  </div>
+
+  <div id="content" class="container-fluid">
+    <ny-dialog *ngIf="msg_snt$|async" status="success" (onDismiss)="onDismiss()">
+      {{'message sent to noya'|translate}}
+    </ny-dialog>
+    <router-outlet></router-outlet>
+  </div>
+
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row footer-row text-center">
+        <div class="col-xs-12 col-sm-3">
+          <a class="h5" href="mailto:noyaschleien@gmail.com">noyaschleien@gmail.com</a>
+        </div>
+        <div class="col-sm-7"></div>
+        <div class="col-xs-12 col-sm-2">
+          <button (click)="goToContact()" class="btn btn-primary">{{'Order Concert'|translate}}</button>
+        </div>
+        <hr class="dl-horizontal"/>
+        <div class="col-sm-12 hidden-xs">
+          <span>Noya Schleien@2013</span>
+          <span>|</span>
+          <span>Developed by</span>
+          <a>Future WebSites</a>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+          <span>Noya Schleien@2013</span>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+          <span>Developed by</span>
+          <a>Future WebSites</a>
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+  <div [dir]="oppositeDir">
+    <contact-widget></contact-widget>
+  </div>
+
+</div>
+
+
+

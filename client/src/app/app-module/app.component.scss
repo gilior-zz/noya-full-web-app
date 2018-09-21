@@ -1,0 +1,84 @@
+﻿.galilu-link {
+    opacity: 0.5;
+    border-radius: 50% !important;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+h4 {
+    float: left !important;
+}
+
+.lang-group {
+    float: left;
+}
+
+.down-arrow {
+    /*background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;*/
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    top: 80vh;
+    position: absolute;
+    /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487875642/Down-Arrow-PNG-Pic_lx4xrs.png');*/
+    /*background-color:rgba(169, 170, 180, 0.37);*/
+    &--inner {
+        /*padding:2px;*/
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 25px 0 25px;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-name: color_change;
+    }
+
+    &--inner:hover {
+        animation-name: none;
+    }
+
+    &--bottom {
+        margin-top: 3px;
+    }
+
+    &--top {
+        animation-delay: 1s;
+    }
+
+
+
+    @keyframes color_change {
+        0% {
+            border-top-color: rgba(225, 84, 84, 0.5);
+        }
+
+        20% {
+            border-top-color: rgba(202, 219, 162, 0.5);
+        }
+
+        40% {
+            border-top-color: rgba(191, 166, 27, 0.5);
+        }
+
+        60% {
+            border-top-color: rgba(91, 193, 193, 0.5);
+        }
+
+        80% {
+            border-top-color: rgba(208, 37, 37, 0.50);
+        }
+
+        100% {
+            border-top-color: rgba(225, 84, 84, 0.5);
+        }
+    }
+}

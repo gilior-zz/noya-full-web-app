@@ -1,0 +1,10 @@
+﻿<lang-bar></lang-bar>
+<div #headerRow class="header row" [ngStyle]="currentStyles" >
+  <div class="padding-top-15 rotator col-xs-12 h2">{{Title|translate}}</div>
+  <div class="rotator col-xs-12 h2">{{Subject|translate}}</div>
+
+  <main-menu (onHide)="setCurrentStyles($event)"></main-menu>
+
+</div>
+
+

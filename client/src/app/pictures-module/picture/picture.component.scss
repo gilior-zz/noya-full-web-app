@@ -1,0 +1,59 @@
+@media (min-width: 992px) {
+  .img-hover-animation:hover {
+    -moz-transform: scale(1.15) !important;
+    -ms-transform: scale(1.15) !important;
+    -o-transform: scale(1.15) !important;
+    -webkit-transform: scale(1.15) !important;
+    transform: scale(1.15) !important;
+    -moz-transition: all 1s ease !important;
+    -o-transition: all 1s ease !important;
+    -webkit-transition: all 1s ease !important;
+    transition: all 1s ease !important;
+    z-index: 100;
+    width: auto;
+  }
+}
+col-lg-3,.col-md-4,.col-sm-6,.col-xs-12{
+  transition: all 1s; //replace 200ms with time of your choice
+}
+.carousel-control {
+  background: none;
+}
+
+
+.img-rounded {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 0;
+
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+.row {
+  /*background-color: white;*/
+}
+
+.modal-dialog {
+  -moz-transform: translate(0, 0) !important;
+  -ms-transform: translate(0, 0) !important;
+  -o-transform: translate(0, 0) !important;
+  -webkit-transform: translate(0, 0) !important;
+  transform: translate(0, 0) !important;
+}
+
+.carousel-inner .img-carousel {
+  height: 400px !important;
+  margin: 0 auto;
+}

@@ -1,0 +1,81 @@
+﻿
+@import "../../../../stylesheets/bootstrap/variables";
+
+@media (min-width:$screen-md-min) {
+    img:hover {
+        transform: scale(1.1);
+        transition: all 1s ease-out;
+
+    }
+
+    img {
+
+        transition: all 1s ease-out;
+        transform: scale(1);
+    }
+
+    .item-content {
+        height: 350px;
+    }
+}
+
+.item-content {
+    overflow: hidden;
+    height: 350px;
+    background-color: black;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+
+    &--img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+
+    &--card-text {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: aliceblue;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &--toggle-state {
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+
+        &--img {
+            cursor: pointer;
+            position: absolute;
+            top: -350px;
+        }
+    }
+}
+
+
+
+.item-wrp {
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.item-caption {
+    background-color: black;
+    margin-top: 2px;
+    height: 35px;
+}

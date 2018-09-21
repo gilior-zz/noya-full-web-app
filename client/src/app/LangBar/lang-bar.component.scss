@@ -1,0 +1,83 @@
+﻿.main-wrp {
+    &-ltr {
+        right: 0;
+    }
+
+    &-rtl {
+        left: 0;
+    }
+    /*background-color: red;*/
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 0;
+    direction: initial;
+    height: 50px;
+
+    &--lang-wrp-rtl {
+        float: left;
+    }
+
+    &--lang-wrp-ltr {
+        float: right;
+    }
+
+    @keyframes rotating {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(180deg);
+        }
+    }
+
+    @keyframes enlarge {
+        0% {
+            transform: scale(1);
+        }
+
+        20% {
+            transform: scale(1.5);
+        }
+
+        40% {
+            transform: scale(1);
+        }
+    }
+
+    &--toggle-wrp {
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        background-image: url('https://res.cloudinary.com/lior/image/upload/v1488278819/ezgif-2-a9229be3be_ntr560.gif');
+
+        &--img {
+            height: 50px;
+            width: auto;
+        }
+    }
+
+    &--toggle-wrp-rtl {
+        float: right;
+        /*border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;*/
+    }
+
+    &--toggle-wrp-ltr {
+        /*border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;*/
+        float: left;
+    }
+}
+
+.select {
+    background-color: black;
+
+    &--option {
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+}

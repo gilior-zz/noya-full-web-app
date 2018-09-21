@@ -1,0 +1,32 @@
+<div *ngIf="showWidget" [dir]="dir" [@onContactVisibleChanged]="contactVisible" class="contact-widget">
+  <div class="contact-widget--arrow">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i (click)="onClick()" class="fas fa-caret-{{arrowUpDown}}"></i>
+  </div>
+
+  <form class="contact-widget--form" (ngSubmit)="onSubmit()" [formGroup]="contactWidgetForm">
+    <div class="contact-widget--form--frm-filed">
+      <label for="phone">{{'phone'|translate}}</label>
+      <input readonly id="phone" type="text" formControlName="phone">
+    </div>
+    <div class="contact-widget--form--frm-filed">
+      <label for="email">{{'email'|translate}}</label>
+      <input readonly id="email" type="text" formControlName="email">
+    </div>
+    <div class="contact-widget--form--frm-filed">
+      <label for="message">{{'message'|translate}}<span class="contact-widget--form--frm-filed--asterisk">*</span></label>
+      <textarea required id="message" type="text" formControlName="message"></textarea>
+    </div>
+    <div  class="contact-widget--form--frm-btn">
+      <div [ngStyle]="btnStyle" class="contact-widget--form--frm-btn--items-wrp">
+        <button [disabled]="!contactWidgetForm.valid">{{'send'|translate}}</button>
+        <i class="fas fa-arrow-circle-{{arrowLeftRight}}"></i>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
+
+

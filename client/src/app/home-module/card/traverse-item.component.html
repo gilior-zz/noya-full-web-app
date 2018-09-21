@@ -1,0 +1,27 @@
+﻿<div class="row item-wrp text-center">
+
+  <div class="col-lg-12 text-center">
+    <div class="item-content">
+      <!--<div class="item-content--toggle-state">info</div>-->
+      <div class="item-content--toggle-state">
+        <img *ngIf="!isImageMode" (click)="toggleImageMode();" class="item-content--toggle-state--img"
+             src="assets/close.ico"/>
+      </div>
+
+      <img [src]="traverseItem.Image_Url|safeResource:1" alt="" class="item-content--img"
+           [@contentImageState]="contentImageState" (click)="toggleImageMode()"/>
+      <div [@contentTextState]="contentTextState" #content class="item-content--card-text" [hidden]="isImageMode"
+           [innerHtml]="traverseItem.Text|safeResource:0"></div>
+    </div>
+
+    <div (click)="toggleImageMode();" class="item-caption pointer"
+         [innerHtml]="traverseItem.Title|safeResource:0"></div>
+
+  </div>
+
+</div>
+
+
+
+
+
