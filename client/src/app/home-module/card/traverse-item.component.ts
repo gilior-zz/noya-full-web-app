@@ -1,6 +1,6 @@
 ﻿import {Component, Input, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations'
-import {Message, Person, TraverseItem} from '../../dal/models'
+import {Message, Person, TraverseItem} from '../../../../../shared/models'
 import * as $ from 'jquery';
 
 @Component({

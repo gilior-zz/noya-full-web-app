@@ -4,7 +4,7 @@ import {Injectable} from "@angular/core";
 import {CacheManager, DataService, youTubeService} from "../../app/services/services";
 import {Epic, ofType} from "redux-observable";
 import {LOAD_VIDs, MSG_SNT, VIDs_LOADED} from "../const";
-import {DataRequest, Language, VideoItem} from "../../app/dal/models";
+import {DataRequest, Language, VideoItem} from "../../../../shared/models";
 import {IAppState} from "../states/state";
 import {Actions, MetaData, Payload} from "../actions/actions";
 import {FSA} from "flux-standard-action";

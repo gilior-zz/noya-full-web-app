@@ -2,7 +2,7 @@
 import {BaseComponent} from '../../common/base.component'
 import {Router} from '@angular/router'
 import {youTubeService, CacheManager} from '../../services/services'
-import {VideoItem, Language} from '../../dal/models'
+import {VideoItem, Language} from '../../../../../shared/models'
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_VIDs} from "../../../store/const";
 

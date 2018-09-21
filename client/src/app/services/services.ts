@@ -2,8 +2,8 @@ import {catchError, map} from 'rxjs/operators';
 
 import {Injectable} from '@angular/core'
 
-import * as model from '../dal/models'
-import {DataResponse, Language} from '../dal/models'
+import * as model from '../../../../shared/models'
+import {DataResponse, Language} from '../../../../shared/models'
 import {Observable, of} from 'rxjs';
 
 import {HttpClient, HttpErrorResponse, HttpParams} from '@angular/common/http';

@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform, OnInit } from '@angular/core'
 import { DomSanitizer, SafeUrl, SafeResourceUrl, SafeScript, SafeStyle, SafeHtml } from '@angular/platform-browser';
 import * as services from '../services/services'
-import * as dal from '../dal/models'
+import * as dal from '../../../../shared/models'
 @Pipe({
     name: 'safeResource',
 

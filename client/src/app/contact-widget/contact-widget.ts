@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {CacheManager} from '../services/services';
-import {Language, MessageRequest} from '../dal/models';
+import {Language, MessageRequest} from '../../../../shared/models';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {Actions} from '../../store/actions/actions';
 import {SND_MSG} from '../../store/const';

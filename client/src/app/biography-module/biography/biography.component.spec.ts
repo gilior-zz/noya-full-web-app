@@ -1,4 +1,4 @@
-import {CV} from "../../dal/models";
+import {CV} from "../../../../../shared/models";
 import {ComponentFixture, TestBed} from "@angular/core/testing";
 import {BiographyComponent} from "./biography.component";
 import {By} from "@angular/platform-browser";

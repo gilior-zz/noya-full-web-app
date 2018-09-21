@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Program} from '../../dal/models';
+import {Program} from '../../../../../shared/models';
 
 @Component({
   selector: 'ny-program',

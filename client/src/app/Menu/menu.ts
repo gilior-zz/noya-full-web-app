@@ -1,6 +1,6 @@
 ﻿﻿import {Component, EventEmitter, Output} from '@angular/core'
 import {CacheManager} from "../services/services"
-import * as dal from "../dal/models"
+import * as dal from "../../../../shared/models"
 
 import {Router} from '@angular/router'
 import {PageNameService} from '../services/page-name.service'

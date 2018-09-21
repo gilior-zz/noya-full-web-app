@@ -1,5 +1,5 @@
 ﻿import { Injectable } from '@angular/core'
-import { Language } from '../dal/models'
+import { Language } from '../../../../shared/models'
 import { CacheManager } from './services'
 @Injectable()
 export class UtiltyService {

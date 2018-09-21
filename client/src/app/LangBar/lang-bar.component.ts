@@ -1,6 +1,6 @@
 ﻿import {Component} from '@angular/core';
 import {animate, keyframes, state, style, transition, trigger} from '@angular/animations';
-import {Language} from '../dal/models'
+import {Language} from '../../../../shared/models'
 import {CacheManager} from '../services/services'
 
 

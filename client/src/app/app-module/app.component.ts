@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, ElementRef, Injector, OnInit} from "@angular/core"
 
 import * as services from "../services/services"
-import * as dal from "../dal/models"
+import * as dal from "../../../../shared/models"
 import * as $ from 'jquery';
 
 import {Router} from '@angular/router'

@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {CV} from "../../dal/models";
+import {CV} from "../../../../../shared/models";
 
 @Component({
   selector:'ny-biography',

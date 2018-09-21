@@ -1,4 +1,4 @@
-import {TraverseItem} from "../../app/dal/models";
+import {TraverseItem} from "../../../../shared/models";
 import {FluxStandardAction, FSA} from "flux-standard-action";
 import {Injectable} from "@angular/core";
 import {dispatch} from "@angular-redux/store";

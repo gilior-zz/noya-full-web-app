@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core'
-import {Link} from '../../dal/models'
+import {Link} from '../../../../../shared/models'
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_LNKs} from "../../../store/const";
 import {NgRedux} from "@angular-redux/store";

@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8c9bf51-9d51-46f5-872d-225599e60f61" name="Default Changelist" comment="" />
+    <list default="true" id="d8c9bf51-9d51-46f5-872d-225599e60f61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/noya-web-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/LangBar/lang-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/LangBar/lang-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/Menu/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/Menu/menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app-module/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app-module/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/biography-module/biographies/biography.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/biography-module/biographies/biography.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/biography-module/biographies/biography.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/biography-module/biographies/biography.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/biography-module/biography/biography.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/biography-module/biography/biography.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/biography-module/biography/biography.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/biography-module/biography/biography.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/contact-module/Contact/contact.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/contact-module/Contact/contact.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/contact-widget/contact-widget.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/contact-widget/contact-widget.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/dal/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shared/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/dal/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../shared/models.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/home-module/card/traverse-item.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/home-module/card/traverse-item.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/home-module/card/traverse-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/home-module/card/traverse-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/home-module/cards/cards-manager.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/home-module/cards/cards-manager.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/links-module/Links/links.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/links-module/Links/links.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/links-module/Links/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/links-module/Links/links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/links-module/link/link.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/links-module/link/link.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/pictures-module/picture-carousel/picture-carousel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/pictures-module/picture-carousel/picture-carousel.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/pictures-module/picture/picture.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/pictures-module/picture/picture.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/pictures-module/pictures/pictures.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/pictures-module/pictures/pictures.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/pipes/pipe.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/pipes/pipe.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/pipes/safe.pipe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/pipes/safe.pipe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/programs-module/program/program.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/programs-module/program/program.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/programs-module/programs/programs.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/programs-module/programs/programs.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/programs-module/programs/programs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/programs-module/programs/programs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/services/mode.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/services/mode.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/services/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/services/utitlity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/services/utitlity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/videos-module/Videos/videos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/videos-module/Videos/videos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/videos-module/video/video.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/videos-module/video/video.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/store/actions/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/store/actions/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/store/epics/epics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/store/epics/epics.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/store/states/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/store/states/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -41,15 +85,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="14" />
-          <entry key="json" value="46" />
-          <entry key="ts" value="214" />
+          <entry key="json" value="51" />
+          <entry key="ts" value="228" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="14" />
-          <entry key="JSON" value="46" />
-          <entry key="TypeScript" value="214" />
+          <entry key="JSON" value="51" />
+          <entry key="TypeScript" value="228" />
         </counts>
       </usages-collector>
     </session>
@@ -59,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="295">
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -77,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="11">
+              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -112,8 +156,8 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/nodemon.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -222,28 +266,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537384332400</updated>
-      <workItem from="1537384333597" duration="6313000" />
+      <workItem from="1537384333597" duration="7409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6313000" />
+    <option name="totallyTimeSpent" value="7409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="798" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="npm" sideWeight="0.34035656" side_tool="true" visible="true" weight="0.19233312" />
+      <window_info id="npm" sideWeight="0.34157303" side_tool="true" visible="true" weight="0.19233312" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6596434" visible="true" weight="0.19233312" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.65842694" visible="true" weight="0.19233312" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49966952" weight="0.32882884" />
-      <window_info active="true" anchor="bottom" id="Event Log" sideWeight="0.5009914" side_tool="true" visible="true" weight="0.073573574" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.4990086" weight="0.32882884" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50165236" side_tool="true" visible="true" weight="0.33183184" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4990086" visible="true" weight="0.073573574" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49834764" visible="true" weight="0.33183184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,13 +312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodemon.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -281,10 +319,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="11">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>

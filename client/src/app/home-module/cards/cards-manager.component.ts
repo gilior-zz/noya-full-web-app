@@ -1,5 +1,5 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core'
-import {TraverseItem} from '../../dal/models'
+import {TraverseItem} from '../../../../../shared/models'
 import {UtiltyService} from '../../services/utitlity'
 
 import {IAppState} from '../../../store/states/state';

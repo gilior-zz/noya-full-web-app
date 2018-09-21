@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Link} from '../../dal/models';
+import {Link} from '../../../../../shared/models';
 
 @Component({
   selector: 'ny-link',

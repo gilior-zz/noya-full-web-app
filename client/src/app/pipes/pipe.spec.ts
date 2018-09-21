@@ -1,7 +1,7 @@
 import {PPipe} from "./pipes.pipe";
 import {SafeResourcePipe} from "./safe.pipe";
 import {SafeResourceUrl} from "@angular/platform-browser";
-import {ResourceType} from "../dal/models";
+import {ResourceType} from "../../../../shared/models";
 
 describe('pipes.pipe', () => {
   let p, mockTranslationService, safePipe,mockDomSanitizer;

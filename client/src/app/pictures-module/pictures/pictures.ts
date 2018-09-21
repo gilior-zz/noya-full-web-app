@@ -9,7 +9,7 @@ import {
   ViewChild,
   ElementRef, ChangeDetectionStrategy
 } from '@angular/core'
-import * as dal from '../../dal/models'
+import * as dal from '../../../../../shared/models'
 import * as services from '../../services/services'
 
 import {DomSanitizer, SafeUrl, SafeResourceUrl, SafeScript, SafeStyle} from '@angular/platform-browser';

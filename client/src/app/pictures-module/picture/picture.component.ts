@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {ImageGalleryItem} from '../../dal/models';
+import {ImageGalleryItem} from '../../../../../shared/models';
 
 @Component({
   selector: 'ny-picture',

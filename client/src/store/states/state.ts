@@ -1,4 +1,4 @@
-import {CV, ImageGalleryItem, Link, Program, TraverseItem, VideoItem} from '../../app/dal/models';
+import {CV, ImageGalleryItem, Link, Program, TraverseItem, VideoItem} from '../../../../shared/models';
 
 
 export interface IAppState {

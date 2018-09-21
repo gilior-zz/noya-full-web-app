@@ -4,7 +4,7 @@ import {ProgramComponent} from "../program/program.component";
 import {SafeResourcePipe} from "../../pipes/safe.pipe";
 import {Actions} from "../../../store/actions/actions";
 
-import {Program} from "../../dal/models";
+import {Program} from "../../../../../shared/models";
 import {By} from "@angular/platform-browser";
 import {of} from "rxjs/index";
 import {NgRedux} from "@angular-redux/store";

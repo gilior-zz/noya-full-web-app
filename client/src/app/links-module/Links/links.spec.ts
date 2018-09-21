@@ -3,7 +3,7 @@ import {Links} from "./links";
 import {Actions} from "../../../store/actions/actions";
 import {NgRedux} from "@angular-redux/store";
 import {of} from "rxjs/index";
-import {Link} from "../../dal/models";
+import {Link} from "../../../../../shared/models";
 import {By} from "@angular/platform-browser";
 import {LinkComponent} from "../link/link.component";
 

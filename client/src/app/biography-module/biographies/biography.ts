@@ -2,14 +2,14 @@ import {Component, OnInit, Injector, HostBinding, OnDestroy} from '@angular/core
 import {BaseComponent} from '../../common/base.component'
 import {Router} from '@angular/router'
 import * as services from '../../services/services'
-import * as dal from '../../dal/models'
+import * as dal from '../../../../../shared/models'
 
 import {Observable} from 'rxjs';
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_CVs} from "../../../store/const";
 import {NgRedux, select} from "@angular-redux/store";
 import {IAppState} from "../../../store/states/state";
-import {CV} from "../../dal/models";
+import {CV} from "../../../../../shared/models";
 import {Subscription} from "rxjs/Rx";
 
 @Component({

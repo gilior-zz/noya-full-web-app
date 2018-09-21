@@ -1,6 +1,6 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {TraverseItemComponent} from './traverse-item.component';
-import {TraverseItem} from '../../dal/models';
+import {TraverseItem} from '../../../../../shared/models';
 import {SafeResourcePipe} from '../../pipes/safe.pipe';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {PPipe} from '../../pipes/pipes.pipe';

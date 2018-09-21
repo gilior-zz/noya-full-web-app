@@ -1,4 +1,4 @@
-﻿import {Mode} from '../dal/models'
+﻿import {Mode} from '../../../../shared/models'
 import {} from ''
 export class ModeService {
     get currentMode(): Mode { return this.currentMode }

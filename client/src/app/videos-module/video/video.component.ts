@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {VideoItem} from '../../dal/models';
+import {VideoItem} from '../../../../../shared/models';
 
 @Component({
   selector: 'ny-video',

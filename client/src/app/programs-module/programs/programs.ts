@@ -1,6 +1,6 @@
 import {Component, Injector, OnDestroy, OnInit} from '@angular/core'
-import * as dal from '../../dal/models'
-import {Program} from '../../dal/models'
+import * as dal from '../../../../../shared/models'
+import {Program} from '../../../../../shared/models'
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_PRGs} from "../../../store/const";
 import {NgRedux} from "@angular-redux/store";

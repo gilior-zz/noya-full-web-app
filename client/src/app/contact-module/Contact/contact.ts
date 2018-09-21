@@ -4,7 +4,7 @@ import {QuestionControlService} from '../model/question-control.service';
 import {QuestionBase} from '../model/question-base';
 import {questions} from './questions';
 import {CacheManager} from '../../services/services';
-import {Language, MessageRequest} from '../../dal/models';
+import {Language, MessageRequest} from '../../../../../shared/models';
 import {Actions} from "../../../store/actions/actions";
 import {SND_MSG} from "../../../store/const";
 
