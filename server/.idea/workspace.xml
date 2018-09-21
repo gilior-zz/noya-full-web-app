@@ -104,6 +104,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -135,6 +138,7 @@
     <option name="width" value="865" />
     <option name="height" value="990" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -227,7 +231,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="798" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" sideWeight="0.34035656" side_tool="true" visible="true" weight="0.19233312" />
       <window_info id="Favorites" side_tool="true" />
@@ -235,7 +238,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" sideWeight="0.49966952" weight="0.32882884" />
       <window_info active="true" anchor="bottom" id="Event Log" sideWeight="0.5009914" side_tool="true" visible="true" weight="0.073573574" />
       <window_info anchor="bottom" id="Message" order="0" />
