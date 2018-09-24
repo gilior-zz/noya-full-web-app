@@ -75,3 +75,18 @@ typings/
 .serverless
 
 /client/dist/
+client/.idea/inspectionProfiles/
+client/routes/
+client/src/app/contact-module/ui/
+client/src/app/dal/
+server/.idea/inspectionProfiles/
+server/controllers/home.controller.js
+server/controllers/home.controller.js.map
+server/index.js
+server/index.js.map
+server/routes/router.js
+server/routes/router.js.map
+server/services/utility.js
+server/services/utility.js.map
+/server/controllers/home.controller.js
+/server/controllers/home.controller.js.map

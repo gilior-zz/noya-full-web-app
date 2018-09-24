@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a349e40f-9e1e-474a-97ba-b87576013e9b" name="Default" comment="more">
-      <change afterPath="$PROJECT_DIR$/server/controllers/home.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/1.d367d20959e5ffa4a842.js" beforeDir="false" />
@@ -15,15 +14,8 @@
       <change beforePath="$PROJECT_DIR$/client/dist/main.06194d29c569b0988241.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/runtime.88927ecb97d7d2a0090b.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/dal/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/models.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home-module/card/traverse-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/home-module/card/traverse-item.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home-module/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/home-module/home/home.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/store.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/store.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/models.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -54,15 +46,15 @@
     <session id="-969546949">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="5" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="2" />
+          <entry key="Angular2LanguageService" value="3" />
           <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
@@ -100,12 +92,12 @@
     <favorites_list name="noya-web-app" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="71" column="14" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="14" />
+            <state relative-caret-position="382">
+              <caret line="91" column="42" lean-forward="true" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -302,7 +294,20 @@
             <path>
               <item name="noya-web-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="noya-web-app" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="noya-web-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="noya-web-app" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="noya-web-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="noya-web-app" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="home.controller.ts" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -593,6 +598,7 @@
       <workItem from="1537512559019" duration="485000" />
       <workItem from="1537514267201" duration="5737000" />
       <workItem from="1537608176527" duration="640000" />
+      <workItem from="1537768518454" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="more">
       <created>1513330120134</created>
@@ -874,11 +880,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537516975259</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="more">
+      <created>1537768686128</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1537768686128</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="487425000" />
+    <option name="totallyTimeSpent" value="487798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -893,10 +906,10 @@
     <frame x="-7" y="-7" width="1550" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7402402" visible="true" weight="0.16325182" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7387387" visible="true" weight="0.16325182" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.42792794" side_tool="true" weight="0.31857237" />
-      <window_info id="npm" order="3" sideWeight="0.25975975" side_tool="true" visible="true" weight="0.16325182" />
+      <window_info id="npm" order="3" sideWeight="0.26126125" side_tool="true" visible="true" weight="0.16325182" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.4976867" visible="true" weight="0.3078078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49814913" weight="0.33853543" />
@@ -1056,8 +1069,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="71" column="14" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="14" />
+        <state relative-caret-position="382">
+          <caret line="91" column="42" lean-forward="true" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
         </state>
       </provider>
     </entry>

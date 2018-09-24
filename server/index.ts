@@ -26,10 +26,10 @@ app.all('*.*', express.static(client));
 // catch 404 and forward to error handler
 
 
-let r=express.Router();
-r.get('/api/home/text',(req:Request,res:Response) => {
-  res.send('OK')
-})
+// let r=express.Router();
+// r.get('/api/home/text',(req:Request,res:Response) => {
+//   res.send('OK')
+// })
 // app.all('/*', (req, res) => {
 //     res.sendFile('index.html', {root: client});
 // })

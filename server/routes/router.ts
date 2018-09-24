@@ -1,3 +1,4 @@
+
 import {Express, Router} from "express";
 import {promisify} from "util";
 import * as fs from "fs";
@@ -8,14 +9,13 @@ export class MyRouter {
 
     async initRoutes(app: Express, folder: string) {
 
-        const router = Router();
 
         const readdir = promisify(fs.readdir);
 
         const files = await readdir(folder);
 
         for (let file of files) {
-
+            const router = Router();
             if (file.slice(-3) !== '.js')
                 continue;
             const fileName = file.substring(0, file.indexOf('.'))
