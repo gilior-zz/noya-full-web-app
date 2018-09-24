@@ -90,3 +90,15 @@ server/services/utility.js
 server/services/utility.js.map
 /server/controllers/home.controller.js
 /server/controllers/home.controller.js.map
+.idea/inspectionProfiles/
+server/controllers/cv.controller.js
+server/controllers/cv.controller.js.map
+server/controllers/links..controller.js
+server/controllers/links..controller.js.map
+server/controllers/programs.controller.js
+server/controllers/programs.controller.js.map
+server/controllers/contact.controller.js
+server/controllers/contact.controller.js.map
+server/services/mail-manager.js
+server/services/mail-manager.js.map
+shared/models.js.map

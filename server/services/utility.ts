@@ -1,5 +1,5 @@
 import {promisify} from "util";
-import {Response} from "express";
+import {Request, Response} from "express";
 import {join} from "path";
 
 const fs = require('fs');
@@ -16,9 +16,18 @@ class Utility {
         res.status(200).send(data)
     }
 
+    sendErrorToClient(data, res: Response) {
+        res.status(500).send(data)
+    }
+
     async loadContentAndSendToClient(file: string, res: Response) {
         const mockFile = join(process.cwd(), 'mock-data', `${file}.json`);
         const json = await this.getFileContent(mockFile);
+        this.sendDataToClient(json, res);
+    }
+
+    sendMessage(req: Request, res: Response) {
+        const json = req.body;
         this.sendDataToClient(json, res);
     }
 }
