@@ -37,7 +37,7 @@ export class Home implements OnInit, OnDestroy {
 
   ngOnInit() {
 
-    this.actions.dispatcAction({actiontype: LOAD_HOME_PAGE_TEXT, url: 'GetHomePageText'});
+    this.actions.dispatcAction({actiontype: LOAD_HOME_PAGE_TEXT, url: '/home/text'});
 
     let obs = this.store.select('homePageText');
     this.subscription = obs.subscribe((homePageText: string) => {

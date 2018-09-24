@@ -38,7 +38,7 @@ export class StoreModule {
     const middleware = [
       //createLogger(),
       createEpicMiddleware(this.epics.createVideoEpic()),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CARDS, CARDS_LOADED, 'PostData')),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CARDS, CARDS_LOADED, 'GetData')),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_HOME_PAGE_TEXT, HOME_PAGE_TEXT_LOADED, 'PostData')),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CVs, CVs_LOADED, 'PostData')),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_IMGs, IMGs_LOADED, 'PostData')),

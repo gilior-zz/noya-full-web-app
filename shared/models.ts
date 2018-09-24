@@ -169,10 +169,10 @@ export interface LinksResponse extends DataResponse {
   items: Link[];
 }
 
-export interface Person {
-  Name: string;
-  Email: string;
-}
+// export interface Person {
+//   Name: string;
+//   Email: string;
+// }
 
 export interface MessageRequest extends DataRequest {
   Message: Message;
@@ -181,7 +181,7 @@ export interface MessageRequest extends DataRequest {
 export interface Message {
   Date: Date;
   Content: string;
-  Sender: Person;
+  Sender: { Name: string, Email: string; };
   IP: string;
 }
 

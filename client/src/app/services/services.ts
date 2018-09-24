@@ -46,7 +46,7 @@ export class CacheManager {
 
 export class DataService {
 
-  endPoint: string = 'https://noyaschleien.com/api/Data/'
+  endPoint: string = '/api/'
 
   //public GetData(request: model.DataRequest, url: string): Promise<model.DataResponse> {
   //    let body = JSON.stringify({ request });
@@ -100,7 +100,7 @@ export class DataService {
 
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
     console.log('req', {})
-    return this.http.post<DataResponse>(`${this.endPoint}${url}`, {"request": {"Language": 0}}, {
+    return this.http.get<DataResponse>(`${this.endPoint}${url}`, {
       headers: {'content-type': 'application/json'},
       params: new HttpParams().set('lang', Language[lang])
     })

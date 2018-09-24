@@ -1,6 +1,6 @@
 ﻿import {Component, Input, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations'
-import {Message, Person, TraverseItem} from '../../../../../shared/models'
+import {Message, TraverseItem} from '../../../../../shared/models'
 import * as $ from 'jquery';
 
 @Component({
@@ -40,7 +40,7 @@ import * as $ from 'jquery';
 export class TraverseItemComponent implements OnInit {
   isCollapsed: boolean;
   @Input() traverseItem: TraverseItem;
-  person: Person = {Email: '', Name: ''};
+  person = {Email: '', Name: ''};
   contentImageState: string = 'active';
   contentTextState: string = 'inactive';
   isImageMode: boolean = true;
