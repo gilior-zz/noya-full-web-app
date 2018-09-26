@@ -13,7 +13,7 @@ class Utility {
     }
 
     sendDataToClient(data, res: Response) {
-        res.status(200).send(data)
+        return res.status(200).send(data)
     }
 
     sendErrorToClient(data, res: Response) {

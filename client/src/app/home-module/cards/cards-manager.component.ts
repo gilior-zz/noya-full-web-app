@@ -4,7 +4,7 @@ import {UtiltyService} from '../../services/utitlity'
 
 import {IAppState} from '../../../store/states/state';
 import {NgRedux} from '@angular-redux/store';
-import {LOAD_CARDS} from '../../../store/const';
+import {API_HOME_CARDS, LOAD_CARDS} from '../../../store/const';
 
 import {Actions} from '../../../store/actions/actions';
 import {Subscription} from 'rxjs/Rx';
@@ -52,7 +52,7 @@ export class CardsManagerComponent implements OnInit, OnDestroy {
     this.subscription = obs.subscribe((cards: Array<TraverseItem>) => {
       this.cards = cards;
     })
-    this.actions.dispatcAction({actiontype: LOAD_CARDS, url: 'GetTraverseItems'});
+    this.actions.dispatcAction({actiontype: LOAD_CARDS, url: API_HOME_CARDS});
   }
 }
 

@@ -18,7 +18,7 @@ import {Router} from '@angular/router'
 import {select} from "@angular-redux/store";
 import {Observable} from "rxjs";
 import {Actions} from "../../../store/actions/actions";
-import {LOAD_IMGs} from "../../../store/const";
+import {API_GALLERY, LOAD_IMGs} from '../../../store/const';
 
 declare var Swiper: any;
 
@@ -162,7 +162,7 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
   }
 
   ngOnInit() {
-    this.actions.dispatcAction({actiontype: LOAD_IMGs, url: 'GetImages'})
+    this.actions.dispatcAction({actiontype: LOAD_IMGs, url: API_GALLERY})
     // this.headImageUpdate.emit('aaaaa');
     // var lang = this.cacheManager.GetFromCache('lang', dal.Language.Hebrew);
     // this.isEnglish = lang == dal.Language.English;

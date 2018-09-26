@@ -78,14 +78,13 @@ export class DataService {
   }
 
   /** POST: add a new hero to the database */
-  public PostData(url: string, request: any): Observable<DataResponse | {}> {
+  public PostData(url: string, request: any): Observable<DataResponse | HttpErrorResponse> {
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
     var num_lang: Language = +this.CacheManager.GetFromCache('lang', '0');
     if (!request) request = {};
-    request.Language = num_lang;
-    let body = JSON.stringify({request});
+    let body = request.Message;
     console.log('req', request)
-    return this.http.post<DataResponse>(`${this.endPoint}${url}`, body, {
+    return this.http.post<DataResponse>(`${url}`, body, {
       headers: {'content-type': 'application/json'},
       params: new HttpParams().set('lang', Language[lang])
     })
@@ -95,12 +94,12 @@ export class DataService {
   }
 
 
-  public GetData(url: string): Observable<DataResponse | {}> {
+  public GetData(url: string): Observable<DataResponse | HttpErrorResponse> {
 
 
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
     console.log('req', {})
-    return this.http.get<DataResponse>(`${this.endPoint}${url}`, {
+    return this.http.get<DataResponse>(`${url}`, {
       headers: {'content-type': 'application/json'},
       params: new HttpParams().set('lang', Language[lang])
     })

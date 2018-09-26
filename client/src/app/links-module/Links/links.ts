@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core'
 import {Link} from '../../../../../shared/models'
 import {Actions} from "../../../store/actions/actions";
-import {LOAD_LNKs} from "../../../store/const";
+import {API_LINKS, LOAD_LNKs} from '../../../store/const';
 import {NgRedux} from "@angular-redux/store";
 import {IAppState} from "../../../store/states/state";
 
@@ -21,7 +21,7 @@ export class Links implements OnInit {
   }
 
   ngOnInit() {
-    this.actions.dispatcAction({actiontype: LOAD_LNKs, url: 'GetLinks'});
+    this.actions.dispatcAction({actiontype: LOAD_LNKs, url: API_LINKS});
     const obs = this.store.select('links');
     obs.subscribe((links: Link[]) => {
       this.links = links;

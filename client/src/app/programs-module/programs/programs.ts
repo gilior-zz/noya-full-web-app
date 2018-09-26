@@ -2,7 +2,7 @@ import {Component, Injector, OnDestroy, OnInit} from '@angular/core'
 import * as dal from '../../../../../shared/models'
 import {Program} from '../../../../../shared/models'
 import {Actions} from "../../../store/actions/actions";
-import {LOAD_PRGs} from "../../../store/const";
+import {API_PROGRAMS, LOAD_PRGs} from '../../../store/const';
 import {NgRedux} from "@angular-redux/store";
 import {Subscription} from "rxjs/Rx";
 import {IAppState} from "../../../store/states/state";
@@ -28,7 +28,7 @@ export class Programs implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.actions.dispatcAction({actiontype: LOAD_PRGs, url: 'GetPrograms'});
+    this.actions.dispatcAction({actiontype: LOAD_PRGs, url: API_PROGRAMS});
     let obs = this.store.select('programs');
     this.subscription = obs.subscribe((prgs: dal.Program[]) => {
       this.prgs = prgs;

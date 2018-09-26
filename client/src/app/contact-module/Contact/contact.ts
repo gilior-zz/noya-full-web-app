@@ -6,7 +6,7 @@ import {questions} from './questions';
 import {CacheManager} from '../../services/services';
 import {Language, MessageRequest} from '../../../../../shared/models';
 import {Actions} from "../../../store/actions/actions";
-import {SND_MSG} from "../../../store/const";
+import {API_CONTACT, SND_MSG} from '../../../store/const';
 
 
 @Component({
@@ -54,7 +54,7 @@ export class Contact implements OnInit {
     };
 
 
-    this.actions.dispatcAction({actiontype: SND_MSG, url: 'SendMessage'}, req);
+    this.actions.dispatcAction({actiontype: SND_MSG, url: API_CONTACT}, req);
 
 
   }

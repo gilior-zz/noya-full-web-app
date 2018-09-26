@@ -6,7 +6,7 @@ import * as dal from '../../../../../shared/models'
 
 import {Observable} from 'rxjs';
 import {Actions} from "../../../store/actions/actions";
-import {LOAD_CVs} from "../../../store/const";
+import {API_CV, LOAD_CVs} from '../../../store/const';
 import {NgRedux, select} from "@angular-redux/store";
 import {IAppState} from "../../../store/states/state";
 import {CV} from "../../../../../shared/models";
@@ -38,7 +38,7 @@ export class Biography  implements OnInit,OnDestroy {
   //@HostBinding('style.position') position = 'absolute';
 
   ngOnInit() {
-    this.actions.dispatcAction({actiontype: LOAD_CVs, url: 'GetCV'});
+    this.actions.dispatcAction({actiontype: LOAD_CVs, url: API_CV});
     let obs = this.store.select('biographies');
     this.subscription = obs.subscribe((cvs: dal.CV[]) => {
       this.cvs = cvs;

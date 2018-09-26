@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core'
 import {UtiltyService} from '../../services/utitlity'
-import {LOAD_HOME_PAGE_TEXT} from "../../../store/const";
+import {API_HOME_TEXT, LOAD_HOME_PAGE_TEXT} from '../../../store/const';
 import {Actions} from "../../../store/actions/actions";
 import {NgRedux} from "@angular-redux/store";
 import {IAppState} from "../../../store/states/state";
@@ -37,7 +37,7 @@ export class Home implements OnInit, OnDestroy {
 
   ngOnInit() {
 
-    this.actions.dispatcAction({actiontype: LOAD_HOME_PAGE_TEXT, url: '/home/text'});
+    this.actions.dispatcAction({actiontype: LOAD_HOME_PAGE_TEXT, url: API_HOME_TEXT});
 
     let obs = this.store.select('homePageText');
     this.subscription = obs.subscribe((homePageText: string) => {

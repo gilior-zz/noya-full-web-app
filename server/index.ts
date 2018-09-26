@@ -5,12 +5,14 @@ import * as cookieParser from 'cookie-parser'
 import {join} from 'path'
 import * as http from 'http'
 import {router} from "./routes/router";
+import * as cors from 'cors'
 
 const folder = './controllers';
 const port = process.env.PORT || '3000'
 const app = express();
 const client = join(__dirname, '../client/dist');
 
+app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
@@ -21,24 +23,26 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 })
 
 
-router.initRoutes(app, folder);
-
-// app.use(express.static(client));
+router.initRoutes(app, folder).then(() => {
+    // app.use(express.static(client));
 
 // Server static files from /browser
-app.all('*.*', express.static(client));
+    app.all('*.*', express.static(client));
 
 // catch 404 and forward to error handler
-// app.all('/*', (req, res) => {
-//     res.sendFile('index.html', {root: client});
-// })
+    app.use(function (req, res, next) {
+        res.sendFile('index.html', {root: client});
+    })
 
 
-const server = http.createServer(app);
-server.listen(port);
-server.on('error', (err) => {
-    console.log('error', err)
+    const server = http.createServer(app);
+    server.listen(port);
+    server.on('error', (err) => {
+        console.log('error', err)
+    });
+    server.on('listening', () => {
+        console.log('listening on port ' + port)
+    });
+
 });
-server.on('listening', () => {
-    console.log('listening on port ' + port)
-});
+

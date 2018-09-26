@@ -12,9 +12,8 @@ export class ComtactController {
 
     private async sendMsg(req: Request, res: Response) {
         const msg = req.body as Message;
-        msg.IP
 
-        const content = pick(msg, ['Sender.Name','Sender.Email', 'Content', 'IP'])
+        const content = pick(msg, ['Sender.Name', 'Sender.Email', 'Content', 'IP'])
         const json = JSON.stringify(content, undefined, 2);
 
 

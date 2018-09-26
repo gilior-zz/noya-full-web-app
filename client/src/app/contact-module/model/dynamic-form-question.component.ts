@@ -1,6 +1,6 @@
 import {keys} from 'lodash'
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
-import {FormControl, FormGroup, ValidationErrors} from '@angular/forms';
+import {FormControl, FormGroup} from '@angular/forms';
 
 import {QuestionBase} from './question-base';
 
@@ -10,11 +10,6 @@ import {QuestionBase} from './question-base';
   templateUrl: './dynamic-form-question.component.html'
 })
 export class DynamicFormQuestionComponent implements OnChanges {
-  ngOnChanges(changes: SimpleChanges): void {
-    // if (changes['disabled'])
-    //   console.log(changes['disabled'])
-  }
-
   @Input() question: QuestionBase<any>;
   @Input() form: FormGroup;
   @Input() disabled: boolean;
@@ -32,5 +27,11 @@ export class DynamicFormQuestionComponent implements OnChanges {
 
 
     return keys(this.ctrl.errors);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // if (changes['disabled'])
+    //   console.log(changes['disabled'])
+    this.ctrl.setValue('sedfsedfds@sdfdsfsdf.com')
   }
 }

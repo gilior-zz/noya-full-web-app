@@ -102,3 +102,6 @@ server/controllers/contact.controller.js.map
 server/services/mail-manager.js
 server/services/mail-manager.js.map
 shared/models.js.map
+server/controllers/gallery.controller.js
+server/controllers/gallery.controller.js.map
+server/package-lock.json
