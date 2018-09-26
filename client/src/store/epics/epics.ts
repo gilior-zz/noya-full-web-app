@@ -25,7 +25,7 @@ export class Epics {
     return (action$, store) => action$.pipe(ofType(actionType)).pipe(
       switchMap((action: FSA<Payload, MetaData>) => this.dataService[verb](action.meta.url, action.payload)),
       map((data) => {
-        return this.homeAPIActions.doAction({actiontype: nextActionType}, nextActionType === MSG_SNT ? true : data)
+        return this.homeAPIActions.doAction({actiontype: nextActionType}, data)
       }))
   }
 

@@ -1,13 +1,11 @@
 import {Action, Reducer} from 'redux';
 import {composeReducers, defaultFormReducer} from '@angular-redux/form';
 import {IAppState} from '../states/state';
-import {
-  CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, LNKs_LOADED, MSG_SNT, PRGs_LOADED,
-  VIDs_LOADED
-} from '../const';
+import {CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, LNKs_LOADED, MSG_SNT, PRGs_LOADED, VIDs_LOADED} from '../const';
 import * as _ from 'lodash'
-import {MetaData, Payload} from "../actions/actions";
-import {FSA} from "flux-standard-action";
+import {MetaData, Payload} from '../actions/actions';
+import {FSA} from 'flux-standard-action';
+import {HttpErrorResponse} from '@angular/common/http';
 
 export const appStateReducer: Reducer<IAppState> = (state: IAppState, a: Action): IAppState => {
   const action = a as FSA<Payload, MetaData>;
@@ -35,7 +33,8 @@ export const appStateReducer: Reducer<IAppState> = (state: IAppState, a: Action)
       newStore.links = action.payload['Links'];
       return newStore;
     case MSG_SNT:
-      newStore.msg_snt = action.payload;
+      const hide = !action.payload || action.payload instanceof HttpErrorResponse
+      newStore.msg_snt = !hide;
       return newStore;
     default:
       return state;

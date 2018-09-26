@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a349e40f-9e1e-474a-97ba-b87576013e9b" name="Default" comment="more">
-      <change afterPath="$PROJECT_DIR$/server/controllers/gallery.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mock-data/gallery.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/1.d367d20959e5ffa4a842.js" beforeDir="false" />
@@ -30,22 +28,11 @@
       <change beforePath="$PROJECT_DIR$/client/dist/runtime.88927ecb97d7d2a0090b.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/scripts.93df60eb6877ad68bd67.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/styles.ca0cb961d2190f89e85d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/biography-module/biographies/biography.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/biography-module/biographies/biography.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/contact-module/Contact/contact.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/contact-module/Contact/contact.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/contact-module/model/dynamic-form-question.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/contact-module/model/dynamic-form-question.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home-module/cards/cards-manager.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/home-module/cards/cards-manager.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home-module/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/home-module/home/home.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/links-module/Links/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/links-module/Links/links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pictures-module/pictures/pictures.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pictures-module/pictures/pictures.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/programs-module/programs/programs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/programs-module/programs/programs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/const.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/store.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/store.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/epics/epics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/epics/epics.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/app-state.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/reducers/app-state.reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/contact.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/contact.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/utility.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/utility.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/models.js" afterDir="false" />
     </list>
@@ -127,7 +114,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
@@ -136,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shared/models.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -263,8 +250,8 @@
         <option value="$PROJECT_DIR$/shared/models.ts" />
         <option value="$PROJECT_DIR$/server/controllers/contact.controller.ts" />
         <option value="$PROJECT_DIR$/server/mock-data/message.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/client/src/app/services/services.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -629,7 +616,7 @@
       <workItem from="1537514267201" duration="5737000" />
       <workItem from="1537608176527" duration="640000" />
       <workItem from="1537768518454" duration="373000" />
-      <workItem from="1537772793353" duration="7592000" />
+      <workItem from="1537772793353" duration="8294000" />
     </task>
     <task id="LOCAL-00001" summary="more">
       <created>1513330120134</created>
@@ -932,11 +919,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537816042367</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="more">
+      <created>1537964678308</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1537964678308</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495390000" />
+    <option name="totallyTimeSpent" value="496092000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1131,13 +1125,6 @@
     <entry file="file://$PROJECT_DIR$/server/mock-data/cards.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/services/services.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -1149,6 +1136,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
         </state>
       </provider>
     </entry>
