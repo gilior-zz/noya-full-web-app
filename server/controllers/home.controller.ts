@@ -13,11 +13,11 @@ export class HomeController {
     }
 
     async getHomePageText(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('home-text', res)
+        utility.loadContentAndSendToClient(req,'HomePageTextSelect', res)
     }
 
     async getCards(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('cards', res)
+        utility.loadContentAndSendToClient(req,'TraverseItemsSelect', res)
 
     }
 }

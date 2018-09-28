@@ -7,6 +7,6 @@ export class CVController {
     }
 
     private getCV(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('cv', res)
+        utility.loadContentAndSendToClient(req,'CVSelect', res)
     }
 }
