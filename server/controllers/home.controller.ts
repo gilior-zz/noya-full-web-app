@@ -2,7 +2,6 @@ import {Request, Response, Router} from "express";
 // import {promisify} from "util";
 import {promisify} from "util";
 import {utility} from '../services/utility'
-import {TYPES} from "tedious";
 
 const fs = require('fs');
 const read = promisify(fs.readFile);
@@ -14,15 +13,11 @@ export class HomeController {
     }
 
     async getHomePageText(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('HomePageTextSelect', res, {
-            type: TYPES.NVarChar,
-            name: 'lang',
-            value: req['lang']
-        })
+        utility.loadContentAndSendToClient(req,'HomePageTextSelect', res)
     }
 
     async getCards(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('cards', res)
+        utility.loadContentAndSendToClient(req,'TraverseItemsSelect', res)
 
     }
 }

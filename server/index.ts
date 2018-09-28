@@ -12,7 +12,7 @@ const port = process.env.PORT || '3000'
 const app = express();
 const client = join(__dirname, '../client/dist');
 
-app.use(cors())
+// app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());

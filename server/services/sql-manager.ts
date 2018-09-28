@@ -1,10 +1,11 @@
-import {Connection, ConnectionConfig, Request, TediousTypes} from "tedious";
-import {proc_param} from '../../shared/models'
+import {Connection, ConnectionConfig, Request, TediousTypes, TYPES} from "tedious";
+import {proc_arg, proc_param} from '../../shared/models'
+import {Request as ExpressRequest} from "express";
 
 export type MyTediousTypes = TediousTypes;
 
 
-export async function connect() {
+export async function connect(): Promise<Connection> {
 
 
     var config: ConnectionConfig = {
@@ -15,11 +16,9 @@ export async function connect() {
         options: {
             rowCollectionOnDone: true,
             rowCollectionOnRequestCompletion: true,
-            connectTimeout: 60 * 1000 * 60,
-            requestTimeout: 60 * 1000 * 60,
-            cancelTimeout: 60 * 1000 * 60,
             useColumnNames: true,
-            camelCaseColumns: true
+            camelCaseColumns: true,
+            encrypt: true
         }
     };
 
@@ -30,10 +29,31 @@ export async function connect() {
 
 }
 
-export function callProc<T>(con: Connection, proc: string, ...params: proc_param[]): Promise<T[]> {
-    var myrows: any[] = []
-
+function getProcParams(con: Connection, proc: string): Promise<proc_arg[]> {
+    const sql = `select name from sys.parameters where object_id = object_id('${proc}')`
     return new Promise((res, rej) => {
+        const request = new Request(sql, (err, rowCount, proc_args: proc_arg[]) => {
+            res(proc_args);
+        });
+        con.execSql(request);
+    })
+}
+
+function hasArg(arg: string, args: proc_arg[]): boolean {
+    const res = args.filter(i => i.name.value.toLowerCase() === arg);
+    return res.length > 0;
+}
+
+export async function callProc<T>(req: ExpressRequest, con: Connection, proc: string, ...params: proc_param[]): Promise<T[]> {
+    const proc_args = await getProcParams(con, proc);
+    const hasLang = hasArg('@lang', proc_args);
+    if (hasLang)
+        params.push({
+            type: TYPES.NVarChar,
+            name: 'lang',
+            value: req['lang']
+        })
+    return new Promise<T[]>((res, rej) => {
             var request = new Request(proc, function (err, rowCount, rows) {
 
             });
@@ -52,8 +72,8 @@ export function callProc<T>(con: Connection, proc: string, ...params: proc_param
 
 }
 
-async function connectAsync(connection): Promise<Connection | {}> {
-    return new Promise((res, rej) => {
+async function connectAsync(connection): Promise<Connection> {
+    return new Promise<Connection>((res, rej) => {
         connection.on('connect', function (err) {
                 if (err) rej(err)
                 res(connection)

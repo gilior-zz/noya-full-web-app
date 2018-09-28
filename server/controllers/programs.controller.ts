@@ -7,6 +7,6 @@ export class ProgramsController {
     }
 
     private getPrograms(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('programs', res);
+        utility.loadContentAndSendToClient(req, 'ProgramsSelect', res);
     }
 }

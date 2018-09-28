@@ -7,6 +7,6 @@ export class LinksController {
     }
 
     private getLinks(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('links', res)
+        utility.loadContentAndSendToClient(req,'LinksSelect', res)
     }
 }

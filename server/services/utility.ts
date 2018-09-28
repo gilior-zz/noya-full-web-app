@@ -3,6 +3,7 @@ import {Request, Response} from "express";
 import {callProc, connect} from "./sql-manager";
 import {Connection, TYPES} from "tedious";
 import {proc_param} from '../../shared/models'
+
 const fs = require('fs');
 const read = promisify(fs.readFile);
 
@@ -21,12 +22,12 @@ class Utility {
         res.status(500).send(data)
     }
 
-    async loadContentAndSendToClient(proc: string, res: Response, ...params: proc_param[]) {
+    async loadContentAndSendToClient(req: Request, proc: string, res: Response, ...params: proc_param[]) {
         // const mockFile = join(process.cwd(), 'mock-data', `${file}.json`);
         // const json = await this.getFileContent(mockFile);
         const con = await connect();
-        const fromDB = await callProc(con as Connection, proc, ...params)
-
+        const fromDB = await callProc(req, con as Connection, proc, ...params)
+        con.close();
         // const foo=JSON.parse(fromDB)
         this.sendDataToClient(fromDB, res);
     }
@@ -34,6 +35,14 @@ class Utility {
     sendMessage(req: Request, res: Response) {
         const json = req.body;
         this.sendDataToClient(json, res);
+    }
+
+    generateGetParam(lang: string): proc_param {
+        return {
+            type: TYPES.NVarChar,
+            name: 'lang',
+            value: lang
+        }
     }
 }
 

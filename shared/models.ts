@@ -232,6 +232,10 @@ export interface proc_param {
   value: string | number
 }
 
+export interface proc_arg {
+  name:{value:string}
+}
+
 
 
 

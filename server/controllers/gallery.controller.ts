@@ -7,6 +7,6 @@ export class GalleryController {
     }
 
     private getGallery(req: Request, res: Response) {
-        utility.loadContentAndSendToClient('gallery', res)
+        utility.loadContentAndSendToClient(req,'ImagesGallery_NewSelect', res)
     }
 }
