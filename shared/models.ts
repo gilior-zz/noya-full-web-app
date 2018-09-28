@@ -1,4 +1,7 @@
-﻿export interface Box {
+﻿
+
+
+export interface Box {
   title: string;
   text: string
 }
@@ -221,6 +224,12 @@ export interface MenuItem {
 export interface DataError {
   ErrorCode: number;
   ErrorText: string;
+}
+
+export interface proc_param {
+  name: string;
+  type: any;
+  value: string | number
 }
 
 
