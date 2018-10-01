@@ -5,7 +5,6 @@ import * as cookieParser from 'cookie-parser'
 import {join} from 'path'
 import * as http from 'http'
 import {router} from "./routes/router";
-import * as cors from 'cors'
 
 const folder = './controllers';
 const port = process.env.PORT || '3000'

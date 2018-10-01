@@ -17,7 +17,6 @@ export async function connect(): Promise<Connection> {
             rowCollectionOnDone: true,
             rowCollectionOnRequestCompletion: true,
             useColumnNames: true,
-            camelCaseColumns: true,
             encrypt: true
         }
     };
@@ -44,7 +43,7 @@ function hasArg(arg: string, args: proc_arg[]): boolean {
     return res.length > 0;
 }
 
-export async function callProc<T>(req: ExpressRequest, con: Connection, proc: string, ...params: proc_param[]): Promise<T[]> {
+async function addLanguageToParams(con: Connection, proc: string, req: ExpressRequest, ...params: proc_param[]): Promise<proc_param[]> {
     const proc_args = await getProcParams(con, proc);
     const hasLang = hasArg('@lang', proc_args);
     if (hasLang)
@@ -53,23 +52,25 @@ export async function callProc<T>(req: ExpressRequest, con: Connection, proc: st
             name: 'lang',
             value: req['lang']
         })
+    return Promise.resolve(params)
+}
+
+export async function callProc<T>(req: ExpressRequest, con: Connection, proc: string, ...params: proc_param[]): Promise<T[]> {
+    const udpatedParams = await addLanguageToParams(con, proc, req, ...params);
     return new Promise<T[]>((res, rej) => {
             var request = new Request(proc, function (err, rowCount, rows) {
-
             });
-            for (let param of params)
+            for (let param of udpatedParams)
                 request.addParameter(param.name, param.type, param.value)
-
             request.on('doneInProc', (error: Error, more: boolean, rows: any[]) => {
+                for (let row of rows)
+                    for (let key in row)
+                        row[key] = row[key].value
                 res(rows);
             });
-
             con.callProcedure(request);
-
         }
     )
-
-
 }
 
 async function connectAsync(connection): Promise<Connection> {
