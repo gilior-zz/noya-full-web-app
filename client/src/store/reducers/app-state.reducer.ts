@@ -12,25 +12,25 @@ export const appStateReducer: Reducer<IAppState> = (state: IAppState, a: Action)
   let newStore: IAppState = _.cloneDeep(state);
   switch (a.type) {
     case CARDS_LOADED:
-      newStore.cards = action.payload['TraverseItems'];
+      newStore.cards = action.payload;
       return newStore;
     case HOME_PAGE_TEXT_LOADED:
-      newStore.homePageText = action.payload['HomePageTexts'][0].Text;
+      newStore.homePageText = action.payload[0].Text;
       return newStore;
     case CVs_LOADED:
-      newStore.biographies = action.payload['CVs'];
+      newStore.biographies = action.payload;
       return newStore;
     case IMGs_LOADED:
-      newStore.images = action.payload['Images'];
+      newStore.images = action.payload;
       return newStore;
     case VIDs_LOADED:
       newStore.videos = action.payload;
       return newStore;
     case PRGs_LOADED:
-      newStore.programs = action.payload['Programs'];
+      newStore.programs = action.payload;
       return newStore;
     case LNKs_LOADED:
-      newStore.links = action.payload['Links'];
+      newStore.links = action.payload;
       return newStore;
     case MSG_SNT:
       const hide = !action.payload || action.payload instanceof HttpErrorResponse

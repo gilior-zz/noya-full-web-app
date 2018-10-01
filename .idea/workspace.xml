@@ -7,34 +7,22 @@
       <change beforePath="$PROJECT_DIR$/client/dist/1.d367d20959e5ffa4a842.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/2.14acf2acb28bd2778d54.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/3.911603970085e6b1c23f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/3rdpartylicenses.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/4.14b99f134b7638a12674.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/5.3072ec00f4adcd8fa0a1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/6.79096f43b67679982410.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/7.499c092495449b7f29cc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/GYADBR.0646286c259d69795ec6.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/GYADBR.86de9ffe5cf4592bef80.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/GYADBR.997967b8e2b3395a0e7b.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/GYADBR.effd33bcf2addc5a022b.otf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/common.824dc845fb7ae386c2af.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/glyphicons-halflings-regular.448c34a56d699c29117a.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/glyphicons-halflings-regular.89889688147bd7575d63.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/glyphicons-halflings-regular.e18bbf611f2a2e43afc0.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/glyphicons-halflings-regular.f4769f9bdb7466be6508.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/glyphicons-halflings-regular.fa2772327f55d8198301.woff" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/main.06194d29c569b0988241.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/polyfills.49114bce0fffc3277549.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/runtime.88927ecb97d7d2a0090b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/scripts.93df60eb6877ad68bd67.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/styles.ca0cb961d2190f89e85d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/contact-module/model/dynamic-form-question.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/contact-module/model/dynamic-form-question.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/epics/epics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/epics/epics.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/store/reducers/app-state.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/reducers/app-state.reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/contact.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/contact.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/sql-manager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/sql-manager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/models.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -82,7 +70,7 @@
           <entry key="gitignore" value="4" />
           <entry key="json" value="3" />
           <entry key="log" value="1" />
-          <entry key="ts" value="6" />
+          <entry key="ts" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -90,13 +78,13 @@
           <entry key="Git file" value="4" />
           <entry key="JSON" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="6" />
+          <entry key="TypeScript" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="16" />
-          <entry key="ts" value="71" />
+          <entry key="ts" value="264" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -104,7 +92,12 @@
         <counts>
           <entry key="JSON" value="16" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="TypeScript" value="71" />
+          <entry key="TypeScript" value="264" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -114,20 +107,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+            <state relative-caret-position="290">
+              <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shared/models.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/models.ts">
+        <entry file="file://$PROJECT_DIR$/server/services/sql-manager.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -190,6 +192,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="contact-widget" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -201,7 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/app-module/app.component.html" />
         <option value="$PROJECT_DIR$/src/app/contact-widget/contact-widget.scss" />
         <option value="$PROJECT_DIR$/src/app/contact-widget/contact-widget.ts" />
@@ -247,11 +249,12 @@
         <option value="$PROJECT_DIR$/src/app/Menu/menu.spec.ts" />
         <option value="$PROJECT_DIR$/src/app/services/services.ts" />
         <option value="$PROJECT_DIR$/server/index.ts" />
-        <option value="$PROJECT_DIR$/shared/models.ts" />
         <option value="$PROJECT_DIR$/server/controllers/contact.controller.ts" />
         <option value="$PROJECT_DIR$/server/mock-data/message.json" />
         <option value="$PROJECT_DIR$/client/src/app/services/services.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/server/services/sql-manager.ts" />
+        <option value="$PROJECT_DIR$/shared/models.ts" />
       </list>
     </option>
   </component>
@@ -616,7 +619,7 @@
       <workItem from="1537514267201" duration="5737000" />
       <workItem from="1537608176527" duration="640000" />
       <workItem from="1537768518454" duration="373000" />
-      <workItem from="1537772793353" duration="8294000" />
+      <workItem from="1537772793353" duration="19946000" />
     </task>
     <task id="LOCAL-00001" summary="more">
       <created>1513330120134</created>
@@ -926,11 +929,39 @@
       <option name="project" value="LOCAL" />
       <updated>1537964678308</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="more">
+      <created>1537971508312</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1537971508312</updated>
+    </task>
+    <task id="LOCAL-00046" summary="more">
+      <created>1538133870651</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1538133870651</updated>
+    </task>
+    <task id="LOCAL-00047" summary="more">
+      <created>1538141316910</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1538141316910</updated>
+    </task>
+    <task id="LOCAL-00048" summary="more">
+      <created>1538141827430</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1538141827430</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="496092000" />
+    <option name="totallyTimeSpent" value="507744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,10 +976,10 @@
     <frame x="-7" y="-7" width="1550" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7372372" visible="true" weight="0.16325182" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7360179" visible="true" weight="0.16325182" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.42792794" side_tool="true" weight="0.31857237" />
-      <window_info id="npm" order="3" sideWeight="0.26276276" side_tool="true" visible="true" weight="0.16325182" />
+      <window_info id="npm" order="3" sideWeight="0.26398212" side_tool="true" visible="true" weight="0.16325182" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.4976867" visible="true" weight="0.3078078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49814913" weight="0.33853543" />
@@ -961,7 +992,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49603385" weight="0.2102102" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="File Transfer" order="11" visible="true" weight="0.3295583" />
-      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32893157" />
+      <window_info active="true" anchor="bottom" id="TypeScript" order="12" visible="true" weight="0.32882884" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1001,6 +1032,8 @@
         <option value="$PROJECT_DIR$/server/services/mail-manager.js.map" />
         <option value="$PROJECT_DIR$/server/controllers/gallery.controller.js.map" />
         <option value="$PROJECT_DIR$/server/controllers/gallery.controller.js" />
+        <option value="$PROJECT_DIR$/server/services/sql-manager.js" />
+        <option value="$PROJECT_DIR$/server/services/sql-manager.js.map" />
       </list>
     </option>
   </component>
@@ -1046,8 +1079,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular-redux/store/src/components/ng-redux.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/home-module/cards/cards-manager.component.html" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/testing/src/test_bed.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/metadata/ng_module.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/services/utitlity.ts" />
@@ -1132,17 +1163,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shared/models.ts">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+        <state relative-caret-position="290">
+          <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@types/tedious/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+        <state relative-caret-position="212">
+          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/services/sql-manager.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
         </state>
       </provider>
     </entry>

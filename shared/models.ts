@@ -1,7 +1,4 @@
-﻿
-
-
-export interface Box {
+﻿export interface Box {
   title: string;
   text: string
 }
@@ -233,7 +230,7 @@ export interface proc_param {
 }
 
 export interface proc_arg {
-  name:{value:string}
+  name: { value: string }
 }
 
 
