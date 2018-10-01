@@ -7,7 +7,7 @@ import * as http from 'http'
 import {router} from "./routes/router";
 
 const folder = './controllers';
-const port = process.env.PORT || '3000'
+const port = process.env.PORT || '80'
 const app = express();
 const client = join(__dirname, '../client/dist');
 
