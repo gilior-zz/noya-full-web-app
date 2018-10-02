@@ -2,7 +2,7 @@ import {promisify} from "util";
 import {Request, Response} from "express";
 import {callProc, connect} from "./sql-manager";
 import {Connection, TYPES} from "tedious";
-import {proc_param} from '../../shared/models'
+import {proc_param} from '../shared/models'
 
 const fs = require('fs');
 const read = promisify(fs.readFile);

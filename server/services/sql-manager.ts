@@ -1,5 +1,5 @@
 import {Connection, ConnectionConfig, Request, TediousTypes, TYPES} from "tedious";
-import {proc_arg, proc_param} from '../../shared/models'
+import {proc_arg, proc_param} from '../shared/models'
 import {Request as ExpressRequest} from "express";
 
 export type MyTediousTypes = TediousTypes;

@@ -1,5 +1,5 @@
 import {Request, Response, Router} from "express";
-import {Message} from '../../shared/models'
+import {Message} from '../shared/models'
 import {SentMessageInfo} from "nodemailer";
 import {sendMail} from "../services/mail-manager";
 import {pick} from 'lodash'

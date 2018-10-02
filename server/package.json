@@ -9,7 +9,11 @@
     "start": "ts-node index.ts",
     "dev": "nodemon",
     "watch": "nodemon -e ts  -x npm run watch:serve",
-    "watch:serve": "ts-node --inspect index.ts"
+    "watch:serve": "ts-node --inspect index.ts",
+    "a": "webpack --config ./a.js --display-error-details",
+    "b": "webpack --config ./b.js --display-error-details",
+    "c": "webpack --config ./c.js --display-error-details",
+    "d": "webpack --config ./d.js --display-error-details"
   },
   "keywords": [],
   "author": "",
@@ -34,7 +38,9 @@
     "@types/nodemailer": "^4.6.5",
     "@types/tedious": "^2.6.1",
     "nodemon": "^1.18.4",
+    "ts-loader": "3.2.0",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "webpack": "^3.9.1"
   }
 }
