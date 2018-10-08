@@ -8,7 +8,7 @@ import {router} from "./routes/router";
 
 const folder = './controllers';
 const port = process.env.PORT || '80'
-const app = express();
+export const app = express();
 const client = join(__dirname, '../client/dist');
 
 // app.use(cors())
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use((req: Request, res: Response, next: NextFunction) => {
     const lang = req.query.lang;
-    req['lang'] = lang ? 'Eng' : 'Heb';
+    req['lang'] =  lang==1 ? 'Eng' : 'Heb';
     next();
 })
 

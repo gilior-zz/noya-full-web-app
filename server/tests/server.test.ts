@@ -16,7 +16,7 @@ describe('home controller', () => {
             // .expect(200)
             .expect((res: Response) => {
                 console.log(JSON.stringify(res.body, undefined, 2))
-                expect(res.body).toBe('')
+                expect(res.body[0].Text).toContain('Welcome')
             })
             .end(done)
     })
