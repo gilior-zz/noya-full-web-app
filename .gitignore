@@ -105,3 +105,8 @@ shared/models.js.map
 server/controllers/gallery.controller.js
 server/controllers/gallery.controller.js.map
 server/package-lock.json
+dist/
+server/dist/
+server/server.js
+server/services/sql-manager.js
+server/services/sql-manager.js.map

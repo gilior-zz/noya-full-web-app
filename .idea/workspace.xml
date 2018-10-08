@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a349e40f-9e1e-474a-97ba-b87576013e9b" name="Default" comment="more">
+      <change afterPath="$PROJECT_DIR$/server/tests/server.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/1.d367d20959e5ffa4a842.js" beforeDir="false" />
@@ -15,14 +17,15 @@
       <change beforePath="$PROJECT_DIR$/client/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/main.06194d29c569b0988241.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/runtime.88927ecb97d7d2a0090b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/app-state.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/reducers/app-state.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/biography-module/biographies/biography.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/biography-module/biographies/biography.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/typescript-compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/sql-manager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/sql-manager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/models.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/models.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -53,10 +56,11 @@
     <session id="-969546949">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="7" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -68,6 +72,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="4" />
+          <entry key="js" value="1" />
           <entry key="json" value="3" />
           <entry key="log" value="1" />
           <entry key="ts" value="8" />
@@ -77,6 +82,7 @@
         <counts>
           <entry key="Git file" value="4" />
           <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="8" />
         </counts>
@@ -107,20 +113,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="149">
               <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shared/models.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -128,8 +125,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/services/sql-manager.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="663">
+              <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shared/models.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3128">
+              <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -149,7 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>qcs</find>
       <find>cache</find>
       <find>questions</find>
       <find>isSubmitting</find>
@@ -179,6 +187,7 @@
       <find>dist</find>
       <find>mess</find>
       <find>endPoint</find>
+      <find>cookie-parser</find>
     </findStrings>
     <replaceStrings>
       <replace>noya.angular2</replace>
@@ -252,9 +261,9 @@
         <option value="$PROJECT_DIR$/server/controllers/contact.controller.ts" />
         <option value="$PROJECT_DIR$/server/mock-data/message.json" />
         <option value="$PROJECT_DIR$/client/src/app/services/services.ts" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/server/services/sql-manager.ts" />
         <option value="$PROJECT_DIR$/shared/models.ts" />
+        <option value="$PROJECT_DIR$/server/services/sql-manager.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -493,7 +502,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="ser&#9;null&#9;null&#10;.git&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya-web-app/.gitignore&#10;pac&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/package.json&#10;fsa&#9;null&#9;null&#10;pack&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/package.json&#10;store&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/store.module.ts&#10;app.mod&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.module.ts&#10;app.mo&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.module.ts&#10;.spec.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/home-module/cards/cards-manager.component.spec.ts&#10;tsc&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/tsconfig.spec.json&#10;polyfills.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/polyfills.ts&#10;noop-interceptor.service&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/noop-interceptor.service.spec.ts&#10;ang&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/.angular.json&#10;tsco&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/tsconfig.app.json&#10;pull&#9;ACTION&#9;Github.Create.Pull.Request&#10;app.&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.component.ts&#10;contact&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/contact-module/Contact/contact.ts&#10;poly&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/polyfills.ts&#10;index.&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/index.html&#10;servic&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/services.ts&#10;app.c&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.component.ts&#10;header&#9;null&#9;null&#10;app.rou&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.routes.ts&#10;home&#9;null&#9;null&#10;services.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/services.ts&#10;epi&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/epics/epics.ts&#10;app.com&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.component.ts&#10;angu&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/.angular.json&#10;angulr&#9;null&#9;null&#10;index.ht&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/index.html&#10;ubdex&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.module.ts&#10;app.r&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/reducers/app-state.reducer.ts&#10;epic&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/epics/epics.ts&#10;StoreModule&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/store.module.ts&#10;biogr&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/biography-module/biographies/biography.ts&#10;tsconfig.json&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/tsconfig.json&#10;index.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/redux-observable/index.d.ts&#10;ng-redux.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/@angular-redux/store/lib/src/components/ng-redux.d.ts&#10;epics.&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/epics/epics.ts&#10;root-store.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/@angular-redux/store/lib/src/components/root-store.d.ts&#10;compose-reducers.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/@angular-redux/form/dist/source/compose-reducers.d.ts&#10;angular&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/.angular.json&#10;lang-bar.component.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/LangBar/lang-bar.component.ts&#10;{   &quot;compileOnSave&quot;: false,   &quot;compilerOptions&quot;: {     &quot;baseUrl&quot;: &quot;./&quot;,     &quot;outDir&quot;: &quot;./dist/out-tsc&quot;,     &quot;sourceMap&quot;: true,     &quot;declaration&quot;: false,     &quot;moduleResolution&quot;: &quot;node&quot;,     &quot;emitDecoratorMetadata&quot;: true,     &quot;experimentalDecorators&quot;: true,     &quot;target&quot;: &quot;es5&quot;,     &quot;typeRoots&quot;: [       &quot;node_modules/@types&quot;     ],     &quot;lib&quot;: [       &quot;es2017&quot;,       &quot;dom&quot;     ]   } } &#9;null&#9;null&#10;tsconfig&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/tsconfig.app.json&#10;biography.component.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/biography-module/Biography/biography.component.ts&#10;appstate&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/reducers/app-state.reducer.ts&#10;services&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/services.ts&#10;BiographyComponent&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="sql&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya-web-app/server/services/sql-manager.ts&#10;ser&#9;null&#9;null&#10;.git&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya-web-app/.gitignore&#10;pac&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/package.json&#10;fsa&#9;null&#9;null&#10;pack&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/package.json&#10;store&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/store.module.ts&#10;app.mod&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.module.ts&#10;app.mo&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.module.ts&#10;.spec.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/home-module/cards/cards-manager.component.spec.ts&#10;tsc&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/tsconfig.spec.json&#10;polyfills.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/polyfills.ts&#10;noop-interceptor.service&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/noop-interceptor.service.spec.ts&#10;ang&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/.angular.json&#10;tsco&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/tsconfig.app.json&#10;pull&#9;ACTION&#9;Github.Create.Pull.Request&#10;app.&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.component.ts&#10;contact&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/contact-module/Contact/contact.ts&#10;poly&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/polyfills.ts&#10;index.&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/index.html&#10;servic&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/services.ts&#10;app.c&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.component.ts&#10;header&#9;null&#9;null&#10;app.rou&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.routes.ts&#10;home&#9;null&#9;null&#10;services.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/services.ts&#10;epi&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/epics/epics.ts&#10;app.com&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.component.ts&#10;angu&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/.angular.json&#10;angulr&#9;null&#9;null&#10;index.ht&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/index.html&#10;ubdex&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/app-module/app.module.ts&#10;app.r&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/reducers/app-state.reducer.ts&#10;epic&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/epics/epics.ts&#10;StoreModule&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/store.module.ts&#10;biogr&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/biography-module/biographies/biography.ts&#10;tsconfig.json&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/tsconfig.json&#10;index.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/redux-observable/index.d.ts&#10;ng-redux.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/@angular-redux/store/lib/src/components/ng-redux.d.ts&#10;epics.&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/epics/epics.ts&#10;root-store.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/@angular-redux/store/lib/src/components/root-store.d.ts&#10;compose-reducers.d.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/node_modules/@angular-redux/form/dist/source/compose-reducers.d.ts&#10;angular&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/.angular.json&#10;lang-bar.component.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/LangBar/lang-bar.component.ts&#10;{   &quot;compileOnSave&quot;: false,   &quot;compilerOptions&quot;: {     &quot;baseUrl&quot;: &quot;./&quot;,     &quot;outDir&quot;: &quot;./dist/out-tsc&quot;,     &quot;sourceMap&quot;: true,     &quot;declaration&quot;: false,     &quot;moduleResolution&quot;: &quot;node&quot;,     &quot;emitDecoratorMetadata&quot;: true,     &quot;experimentalDecorators&quot;: true,     &quot;target&quot;: &quot;es5&quot;,     &quot;typeRoots&quot;: [       &quot;node_modules/@types&quot;     ],     &quot;lib&quot;: [       &quot;es2017&quot;,       &quot;dom&quot;     ]   } } &#9;null&#9;null&#10;tsconfig&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/tsconfig.app.json&#10;biography.component.ts&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/biography-module/Biography/biography.component.ts&#10;appstate&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/store/reducers/app-state.reducer.ts&#10;services&#9;FILE&#9;file://C:/Users/user/WebstormProjects/noya/new.noya.angular2/src/app/services/services.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.karma.karma_node_package_dir" value="$PROJECT_DIR$/node_modules/karma" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -620,27 +629,7 @@
       <workItem from="1537608176527" duration="640000" />
       <workItem from="1537768518454" duration="373000" />
       <workItem from="1537772793353" duration="19946000" />
-    </task>
-    <task id="LOCAL-00001" summary="more">
-      <created>1513330120134</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1513330120135</updated>
-    </task>
-    <task id="LOCAL-00002" summary="more">
-      <created>1513330388157</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1513330388157</updated>
-    </task>
-    <task id="LOCAL-00003" summary="more">
-      <created>1513332496819</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1513332496819</updated>
+      <workItem from="1539019252965" duration="730000" />
     </task>
     <task id="LOCAL-00004" summary="more">
       <created>1513443514977</created>
@@ -957,11 +946,39 @@
       <option name="project" value="LOCAL" />
       <updated>1538141827430</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="more">
+      <created>1538396754919</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1538396754919</updated>
+    </task>
+    <task id="LOCAL-00050" summary="more">
+      <created>1538497476572</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1538497476573</updated>
+    </task>
+    <task id="LOCAL-00051" summary="more">
+      <created>1538505695331</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1538505695331</updated>
+    </task>
+    <task id="LOCAL-00052" summary="more">
+      <created>1538597267319</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1538597267319</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="507744000" />
+    <option name="totallyTimeSpent" value="514945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,10 +993,10 @@
     <frame x="-7" y="-7" width="1550" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7360179" visible="true" weight="0.16325182" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7328605" visible="true" weight="0.11566424" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.42792794" side_tool="true" weight="0.31857237" />
-      <window_info id="npm" order="3" sideWeight="0.26398212" side_tool="true" visible="true" weight="0.16325182" />
+      <window_info id="npm" order="3" sideWeight="0.2671395" side_tool="true" visible="true" weight="0.11566424" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.4976867" visible="true" weight="0.3078078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49814913" weight="0.33853543" />
@@ -988,11 +1005,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882884" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50231326" side_tool="true" weight="0.3003003" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.37387386" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49603385" weight="0.2102102" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.37237236" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49603385" visible="true" weight="0.36486486" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="File Transfer" order="11" visible="true" weight="0.3295583" />
-      <window_info active="true" anchor="bottom" id="TypeScript" order="12" visible="true" weight="0.32882884" />
+      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32882884" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1025,15 +1042,34 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/server/controllers/contact.controller.js.map" />
+        <option value="$PROJECT_DIR$/server/services/sql-manager.js" />
+        <option value="$PROJECT_DIR$/server/services/mail-manager.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/programs.controller.js" />
+        <option value="$PROJECT_DIR$/server/services/sql-manager.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/programs.controller.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/cv.controller.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/cv.controller.js" />
         <option value="$PROJECT_DIR$/server/controllers/contact.controller.js" />
+        <option value="$PROJECT_DIR$/server/controllers/gallery.controller.js" />
+        <option value="$PROJECT_DIR$/server/controllers/links..controller.js" />
+        <option value="$PROJECT_DIR$/server/controllers/contact.controller.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/home.controller.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/home.controller.js" />
+        <option value="$PROJECT_DIR$/server/shared/models.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/links..controller.js.map" />
+        <option value="$PROJECT_DIR$/server/tests/server.test.js.map" />
+        <option value="$PROJECT_DIR$/server/controllers/gallery.controller.js.map" />
+        <option value="$PROJECT_DIR$/server/index.js.map" />
+        <option value="$PROJECT_DIR$/server/shared/models.js" />
+        <option value="$PROJECT_DIR$/server/tests/server.test.js" />
         <option value="$PROJECT_DIR$/shared/models.js.map" />
         <option value="$PROJECT_DIR$/server/services/mail-manager.js" />
-        <option value="$PROJECT_DIR$/server/services/mail-manager.js.map" />
-        <option value="$PROJECT_DIR$/server/controllers/gallery.controller.js.map" />
-        <option value="$PROJECT_DIR$/server/controllers/gallery.controller.js" />
-        <option value="$PROJECT_DIR$/server/services/sql-manager.js" />
-        <option value="$PROJECT_DIR$/server/services/sql-manager.js.map" />
+        <option value="$PROJECT_DIR$/server/index.js" />
+      </list>
+    </option>
+    <option name="additionalRoots">
+      <list>
+        <option value="$PROJECT_DIR$/server/node_modules/@types" />
       </list>
     </option>
   </component>
@@ -1079,7 +1115,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/testing/src/test_bed.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/metadata/ng_module.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/services/utitlity.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/home-module/home/home.ts" />
@@ -1163,31 +1198,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/@types/tedious/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/server.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="149">
           <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/@types/tedious/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/services/sql-manager.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="663">
+          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/models.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
+        <state relative-caret-position="3128">
+          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
         </state>
       </provider>
     </entry>
